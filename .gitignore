@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / dist
+dist/
+build/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/
+
+# Firebase/Service accounts (NUNCA commitar chave real)
+**/keys/
+*.local
+firebase-debug.log
+firebase-debug.*.log
+
+# CRA
+frontend/.pnp
+frontend/.pnp.js
+
+# Functions
+backend/functions/lib/
+backend/functions/.tsbuildinfo
