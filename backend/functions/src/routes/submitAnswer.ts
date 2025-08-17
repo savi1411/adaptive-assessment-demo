@@ -4,9 +4,7 @@ import { db } from "../core/firebase";
 import { updateBandit, SkillDoc } from "../core/bandit";
 import * as admin from "firebase-admin";
 import { buildSummary } from "../core/summary";
-
-/** Skills-alvo do diagnóstico (mova para config/DB quando quiser) */
-const REQUIRED_SKILLS = ["cf_art1", "cf_art5", "cf_art37"] as const;
+import { REQUIRED_SKILLS } from "../core/config";
 
 /** Parâmetros de parada do diagnóstico */
 const MIN_ATTEMPTS_PER_SKILL = 6;   // de 3 -> 6

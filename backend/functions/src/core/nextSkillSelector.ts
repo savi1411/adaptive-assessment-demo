@@ -1,11 +1,10 @@
 // functions/src/core/nextSkillSelector.ts
 import { db } from "./firebase";
 import { SkillDoc, SkillCounts, toCounts, pickNextSkill } from "./bandit";
+import { REQUIRED_SKILLS } from "../core/config";
 
 type Mode = "diagnostic" | "training";
 
-/** Skills-alvo do diagnóstico (mova p/ config/DB quando quiser) */
-const REQUIRED_SKILLS = ["cf_art1", "cf_art5", "cf_art37"] as const;
 /** fallback para usuário novo = mesmas skills obrigatórias */
 const SKILLS_FALLBACK = REQUIRED_SKILLS;
 
