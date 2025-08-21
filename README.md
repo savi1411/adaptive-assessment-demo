@@ -19,15 +19,17 @@ O objetivo da demo é demonstrar como um sistema de **aprendizado adaptativo** p
   - Projeção de evolução a partir do desempenho passado.  
   - Detecção de padrões de acertos e erros para prever pontos de reforço.
 
-> ⚠️ Importante: **não foi utilizada IA generativa** (LLMs, NLP ou RAG). O foco esteve em algoritmos matemáticos e adaptativos clássicos.
+> ⚠️ Importante: O foco dessa demo está em algoritmos matemáticos e adaptativos clássico, porém o motor adaptativo, apesar de ser um dos pilares centrais da Aprendizagem Adaptativa não atua de forma isolada: a experiência de aprendizagem pode ser potencializada por outras disciplinas complementares, como o uso de IA generativa para criação de conteúdos dinâmicos, feedback em tempo real e a implementação de bots personalizados que ampliam a interação.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Front-end**: React + Tailwind CSS  
+- **Front-end**: React + Tailwind CSS
 - **Back-end API**: Node.js com Firebase Cloud Functions  
 - **Banco de Dados**: Firebase Firestore  
   - Armazenamento dos assessments, diagnósticos e questionários.  
   - Registro da evolução dos alunos ao longo do tempo.  
+
+[Ver diagrama de arquitetura (simplificado)](docs/fluxo-motor-adaptativo.png)
 
 ## 📂 Estrutura da Demo
 
