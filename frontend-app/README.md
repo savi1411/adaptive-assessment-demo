@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Projeto adaptive-assessment-demo
+Projeto Demo de IA Adaptativa para o evento AI Tinkeres de 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔍 Contexto
 
-## Available Scripts
+O objetivo da demo é demonstrar como um sistema de **aprendizado adaptativo** pode personalizar a jornada de estudo de cada aluno com base em diagnósticos iniciais, estatísticas de desempenho e evolução individual ao longo do tempo.
 
-In the project directory, you can run:
+## 🧠 Conceitos de IA Adaptativa aplicados
 
-### `npm start`
+- **Personalização Adaptativa**  
+  O motor seleciona conteúdos e rotas de estudo de acordo com os resultados do diagnóstico inicial e com o histórico do aluno.  
+  - Ajuste dinâmico da trilha de questões.  
+  - Identificação de pontos fortes e lacunas de conhecimento.  
+  - Recomendação de próximos passos com base na performance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Análise Preditiva**  
+  O sistema utiliza conceitos matemáticos e estatísticos (sem uso de modelos generativos) para estimar a evolução do aluno e antecipar dificuldades prováveis.  
+  - Regressões e cálculos de probabilidade.  
+  - Projeção de evolução a partir do desempenho passado.  
+  - Detecção de padrões de acertos e erros para prever pontos de reforço.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> ⚠️ Importante: O foco dessa demo está em algoritmos matemáticos e adaptativos clássico, porém o motor adaptativo, apesar de ser um dos pilares centrais da Aprendizagem Adaptativa não atua de forma isolada: a experiência de aprendizagem pode ser potencializada por outras disciplinas complementares, como o uso de IA generativa para criação de conteúdos dinâmicos, feedback em tempo real e a implementação de bots personalizados que ampliam a interação.
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Front-end**: React + Tailwind CSS  
+- **Back-end API**: Node.js com Firebase Cloud Functions  
+- **Banco de Dados**: Firebase Firestore  
+  - Armazenamento dos assessments, diagnósticos e questionários.  
+  - Registro da evolução dos alunos ao longo do tempo.  
 
-### `npm run build`
+[Ver diagrama de arquitetura (simplificado)](docs/architecture_simple.md)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Estrutura da Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Diagnóstico Inicial** – O aluno responde a questões sobre fundamentos em IA.  
+2. **Registro no Firestore** – O sistema salva os resultados e o perfil inicial.  
+3. **Seleção de Conteúdo** – O motor adaptativo indica próximos passos de estudo.  
+4. **Evolução** – O progresso do aluno é armazenado e atualizado em tempo real.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Resultado
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+A demo mostra de forma prática como é possível construir um **motor adaptativo** que se baseia em dados do aluno para oferecer um ensino personalizado, escalável e com base em fundamentos estatísticos.
