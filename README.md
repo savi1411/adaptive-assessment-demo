@@ -29,7 +29,7 @@ O objetivo da demo é demonstrar como um sistema de **aprendizado adaptativo** p
   - Armazenamento dos assessments, diagnósticos e questionários.  
   - Registro da evolução dos alunos ao longo do tempo.  
 
-[Ver diagrama de arquitetura (simplificado)](docs/fluxo-motor-adaptativo.png)
+[Ver diagrama de arquitetura (simplificado)](/frontend-app/docs/fluxo-motor-adaptativo.png)
 
 ## 📂 Estrutura da Demo
 
