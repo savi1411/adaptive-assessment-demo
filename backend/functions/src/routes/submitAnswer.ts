@@ -7,9 +7,9 @@ import { buildSummary } from "../core/summary";
 import { REQUIRED_SKILLS } from "../core/config";
 
 /** Parâmetros de parada do diagnóstico */
-const MIN_ATTEMPTS_PER_SKILL = 6;   // de 3 -> 6
-const MAX_SD_FOR_STOP = 0.17;       // de 0.10 -> 0.17
-const MAX_QUESTIONS_DIAG = 21;      // teto de segurança
+const MIN_ATTEMPTS_PER_SKILL = 3;  // exige 3 questões por skill
+const MAX_SD_FOR_STOP = 0.17;      // mantém critério de precisão atual
+const MAX_QUESTIONS_DIAG = 12;     // novo teto
 
 /** Limiar de classificação pedagógica */
 const STRONG_MIN = 0.80;
