@@ -8,18 +8,26 @@ O objetivo da demo é demonstrar como um sistema de **aprendizado adaptativo** p
 ## 🧠 Conceitos de IA Adaptativa aplicados
 
 - **Personalização Adaptativa**  
-  O motor seleciona conteúdos e rotas de estudo de acordo com os resultados do diagnóstico inicial e com o histórico do aluno.  
-  - Ajuste dinâmico da trilha de questões.  
-  - Identificação de pontos fortes e lacunas de conhecimento.  
-  - Recomendação de próximos passos com base na performance.
+  Inserida dentro do guarda-chuva do Machine Learning, a IA adaptativa se apoia em métodos estatísticos para ajustar a experiência de cada usuário. O motor seleciona conteúdos e rotas de estudo conforme os resultados do diagnóstico e a evolução do aluno.
+    •	Ajuste dinâmico da trilha de questões.
+    •	Identificação de pontos fortes e lacunas de conhecimento.
+    •	Recomendação de próximos passos com base em evidência estatística.
 
-- **Análise Preditiva**  
-  O sistema utiliza conceitos matemáticos e estatísticos (sem uso de modelos generativos) para estimar a evolução do aluno e antecipar dificuldades prováveis.  
-  - Regressões e cálculos de probabilidade.  
-  - Projeção de evolução a partir do desempenho passado.  
-  - Detecção de padrões de acertos e erros para prever pontos de reforço.
+- **Modelagem Probabilística (Beta-Bernoulli)**  
+  Diferente da IA Generativa, esta demo utiliza fundamentos matemáticos clássicos para estimar o nível de conhecimento do aluno. Cada resposta atualiza distribuições de probabilidade (α e β), refletindo acertos e erros.
+    •	Atualização contínua da “crença” sobre cada skill.
+    •	Representação da incerteza com distribuições de probabilidade.
+    •	Tomada de decisão baseada em confiança estatística, não em geração de texto.
 
-> ⚠️ Importante: O foco dessa demo está em algoritmos matemáticos e adaptativos clássico, porém o motor adaptativo, apesar de ser um dos pilares centrais da Aprendizagem Adaptativa não atua de forma isolada: a experiência de aprendizagem pode ser potencializada por outras disciplinas complementares, como o uso de IA generativa para criação de conteúdos dinâmicos, feedback em tempo real e a implementação de bots personalizados que ampliam a interação.
+- **Exploração e Exploitação (Bandit-like)**  
+  Para escolher a próxima questão, o motor aplica uma lógica inspirada em algoritmos de multi-armed bandit: primeiro garante cobertura mínima das skills e, depois, explora onde a incerteza é maior.
+    •	Cobertura: toda skill precisa de evidência mínima.
+    •	Slot Machine: é como se cada alavanca fosse uma skill. O motor decide entre: 
+      •	Exploração: puxar uma nova alavanca (selecionar questões em skills com pouca evidência, para reduzir incerteza).
+      •	Exploitação: continuar puxando a mesma alavanca (reforçar áreas já identificadas como fortes ou frágeis, consolidando a confiança estatística).
+    •	Término automático quando a precisão estatística é alcançada ou o número máximo de questões é atingido.
+
+> ⚠️ Importante: A IA adaptativa é um dos pilares da **Aprendizagem Adaptativa** e se apoia em fundamentos de Machine Learning probabilístico/estatístico. Ela não atua isoladamente: em cenários reais, pode ser combinada a outras disciplinas, como IA Generativa para criação de conteúdos dinâmicos, feedback interativo e bots personalizados que ampliam a experiência de aprendizagem.
 
 ## 🛠️ Tecnologias Utilizadas
 
